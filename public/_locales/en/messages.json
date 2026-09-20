@@ -1,0 +1,26 @@
+{
+  "extensionName": {
+    "message": "Textpipe",
+    "description": "Extension name"
+  },
+  "extensionShortName": {
+    "message": "Textpipe",
+    "description": "Short extension name"
+  },
+  "extensionDescription": {
+    "message": "Share a small text snippet across Chrome devices using the same Google Account and Chrome Sync.",
+    "description": "Extension description"
+  },
+  "actionTitle": {
+    "message": "Open Textpipe",
+    "description": "Toolbar tooltip"
+  },
+  "newContentTitle": {
+    "message": "Textpipe · New shared text",
+    "description": "Tooltip when another device sends new content"
+  },
+  "contextMenuAddSelection": {
+    "message": "Add to Textpipe",
+    "description": "Context menu shown when the user selects text"
+  }
+}

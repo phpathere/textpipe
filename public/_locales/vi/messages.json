@@ -1,0 +1,26 @@
+{
+  "extensionName": {
+    "message": "Textpipe",
+    "description": "Tên extension"
+  },
+  "extensionShortName": {
+    "message": "Textpipe",
+    "description": "Tên rút gọn"
+  },
+  "extensionDescription": {
+    "message": "Chia sẻ một đoạn văn bản nhỏ giữa các máy dùng cùng Tài khoản Google và Chrome Sync.",
+    "description": "Mô tả extension"
+  },
+  "actionTitle": {
+    "message": "Mở Textpipe",
+    "description": "Tooltip trên thanh công cụ"
+  },
+  "newContentTitle": {
+    "message": "Textpipe · Có nội dung mới",
+    "description": "Tooltip khi có nội dung mới từ máy khác"
+  },
+  "contextMenuAddSelection": {
+    "message": "Thêm vào Textpipe",
+    "description": "Menu chuột phải khi người dùng chọn văn bản"
+  }
+}

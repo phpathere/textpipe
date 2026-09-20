@@ -1,0 +1,47 @@
+{
+  "name": "textpipe-chrome-extension",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chia sẻ một đoạn văn bản nhỏ giữa các Chrome desktop dùng cùng tài khoản Google và Extension ID.",
+  "type": "module",
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "dev": "vite",
+    "build": "vite build",
+    "build:cross-device-test": "npm run build && npm run audit:build && node scripts/build-cross-device-test.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:pinned": "node scripts/test-pinned-package.mjs",
+    "audit:build": "node scripts/audit-build.mjs",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test:run && npm run build && npm run audit:build",
+    "release": "npm run clean && npm run check && npm run test:coverage && node scripts/build-cross-device-test.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/plus-jakarta-sans": "5.3.0",
+    "preact": "10.29.8"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.10",
+    "@playwright/test": "1.62.1",
+    "@preact/preset-vite": "2.10.6",
+    "@testing-library/preact": "3.2.4",
+    "@testing-library/user-event": "14.6.6",
+    "@types/chrome": "0.2.7",
+    "@types/node": "26.3.0",
+    "@vitest/coverage-v8": "4.1.11",
+    "happy-dom": "20.11.6",
+    "typescript": "7.0.2",
+    "vite": "8.2.2",
+    "vitest": "4.1.11"
+  },
+  "engines": {
+    "node": ">=24.0.0 <25"
+  },
+  "packageManager": "npm@11.12.1"
+}
